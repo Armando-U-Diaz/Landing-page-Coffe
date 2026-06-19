@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="JK Foodies Café & Bakery — Baked with love. Served with warmth. Descubre nuestros productos artesanales, haz tu reserva y visítanos." />
+  <meta name="keywords" content="café, bakery, panadería, artesanal, JK Foodies, reservas, menú" />
+  <meta property="og:title" content="JK Foodies Café & Bakery" />
+  <meta property="og:description" content="Baked with love. Served with warmth." />
+  <meta property="og:type" content="website" />
+  <title>JK Foodies Café & Bakery</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="#hero" class="nav-logo" aria-label="JK Foodies inicio">
+        <span class="logo-jk">JK</span>
+        <span class="logo-text">Foodies</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#menu" class="nav-link">Menú</a></li>
+        <li><a href="#galeria" class="nav-link">Galería</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li><a href="#reservas" class="nav-link nav-cta">Reservar Mesa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero" aria-label="Hero principal">
+      <div class="hero-bg" id="hero-bg" aria-hidden="true">
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">Café & Bakery Artesanal</div>
+        <h1 class="hero-title">
+          <span class="hero-title-main">JK Foodies</span>
+        </h1>
+        <p class="hero-slogan">Baked with love.<br /><em>Served with warmth.</em></p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Explorar Menú</a>
+          <a href="#reservas" class="btn btn-outline">Hacer Reserva</a>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE NOSOTROS ===================== -->
+    <section class="section about" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual" data-reveal="left">
+            <div class="about-img-frame">
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&q=80"
+                alt="Panadero artesano formando pan con sus manos"
+                loading="lazy"
+                width="700"
+                height="500"
+              />
+              <div class="about-img-badge">
+                <span class="badge-year">Desde</span>
+                <span class="badge-number">2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-text" data-reveal="right">
+            <p class="section-eyebrow">Nuestra historia</p>
+            <h2 class="section-title" id="about-title">Hecho con manos,<br />lleno de alma.</h2>
+            <p class="about-lead">JK Foodies nació de una mesa familiar, del olor a pan recién horneado y del deseo de compartir algo genuino con el mundo.</p>
+            <p class="about-body">Desde 2018, cada croissant, cada taza de café y cada pastel que sale de nuestra cocina lleva consigo décadas de recetas heredadas, ingredientes locales cuidadosamente elegidos y la dedicación de un equipo que ama profundamente lo que hace.</p>
+            <p class="about-body">No somos una cadena. No seguimos tendencias. Seguimos el ritmo de las estaciones, la sabiduría de nuestros abuelos y el placer simple de hacer bien las cosas.</p>
+            <ul class="about-pillars" aria-label="Nuestros valores">
+              <li>
+                <span class="pillar-icon" aria-hidden="true">🌾</span>
+                <div>
+                  <strong>Ingredientes locales</strong>
+                  <p>Trabajamos con productores de la región.</p>
+                </div>
+              </li>
+              <li>
+                <span class="pillar-icon" aria-hidden="true">🔥</span>
+                <div>
+                  <strong>Horneado diario</strong>
+                  <p>Sin conservadores. Fresco cada mañana.</p>
+                </div>
+              </li>
+              <li>
+                <span class="pillar-icon" aria-hidden="true">☕</span>
+                <div>
+                  <strong>Café de especialidad</strong>
+                  <p>Granos de origen único, tostados en casa.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MENÚ ===================== -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Lo mejor de la casa</p>
+          <h2 class="section-title" id="menu-title">Menú Destacado</h2>
+          <p class="section-subtitle">Productos elaborados a diario con amor y los mejores ingredientes artesanales.</p>
+        </div>
+        <ul class="menu-grid" role="list">
+          <li class="menu-card" data-reveal="up">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80" alt="Croissant de mantequilla recién horneado" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Horneado fresco cada mañana con mantequilla europea de alta calidad.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Panadería</div>
+              <h3 class="menu-card-name">Croissant de Mantequilla</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Hojaldrado, dorado y crujiente</span>
+                <span class="menu-card-price">$42</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.08s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1586376793674-2785f04f4e66?w=500&q=80" alt="Canela roll cubierto de glaseado blanco" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Enrollado a mano con canela de Ceilán y glaseado de vainilla.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Panadería</div>
+              <h3 class="menu-card-name">Cinnamon Roll</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Suave, especiado y glorioso</span>
+                <span class="menu-card-price">$55</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.16s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517093728-89551a66a302?w=500&q=80" alt="Taza de café latte con arte latte en espuma" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Espresso doble, leche vaporizada y un toque de arte latte.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Bebidas</div>
+              <h3 class="menu-card-name">Latte Artesanal</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Granos de origen único</span>
+                <span class="menu-card-price">$68</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.04s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80" alt="Tarta de frutas rojas sobre base de crema pastelera" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Base sablé, crema pastelera de vainilla y frutas de temporada.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Repostería</div>
+              <h3 class="menu-card-name">Tarta de Frutas</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Fresca, elegante y delicada</span>
+                <span class="menu-card-price">$85</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.12s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1571748982800-fa51082c2224?w=500&q=80" alt="Pan de masa madre con corteza dorada y crujiente" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>72 horas de fermentación. Corteza crujiente, miga abierta y sabor profundo.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Panes</div>
+              <h3 class="menu-card-name">Pan de Masa Madre</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Fermentación lenta, sabor auténtico</span>
+                <span class="menu-card-price">$95</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.20s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1616690248841-ece0e87f0186?w=500&q=80" alt="Cheesecake de Nueva York en rodaja con base de galleta" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Receta clásica de Nueva York, base de galleta Graham y coulis de frambuesa.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Repostería</div>
+              <h3 class="menu-card-name">Cheesecake NY</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Cremoso, denso e irresistible</span>
+                <span class="menu-card-price">$90</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.08s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&q=80" alt="Muffin de arándanos con costra de azúcar" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Repleto de arándanos frescos y terminado con crujiente de azúcar perlado.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Panadería</div>
+              <h3 class="menu-card-name">Muffin de Arándanos</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Esponjoso y explosivo de sabor</span>
+                <span class="menu-card-price">$48</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.16s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=500&q=80" alt="Cappuccino con canela y espuma densa" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Espresso balanceado, espuma densa y un toque de canela molida.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Bebidas</div>
+              <h3 class="menu-card-name">Cappuccino Clásico</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Equilibrado y reconfortante</span>
+                <span class="menu-card-price">$58</span>
+              </div>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal="up" style="--delay:.24s">
+            <div class="menu-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?w=500&q=80" alt="Éclair de chocolate con glaseado brillante" loading="lazy" width="500" height="400" />
+              <div class="menu-card-overlay">
+                <p>Pasta choux crujiente, crema pastelera de chocolate amargo y glaseado espejo.</p>
+              </div>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-tag">Repostería</div>
+              <h3 class="menu-card-name">Éclair de Chocolate</h3>
+              <div class="menu-card-footer">
+                <span class="menu-card-desc">Elegancia francesa en cada bocado</span>
+                <span class="menu-card-price">$72</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="menu-cta-wrap">
+          <a href="#reservas" class="btn btn-primary">Reservar una mesa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERÍA ===================== -->
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Nuestro espacio</p>
+          <h2 class="section-title" id="gallery-title">La Experiencia JK</h2>
+          <p class="section-subtitle">Un vistazo a lo que te espera: aromas, texturas y momentos para recordar.</p>
+        </div>
+      </div>
+      <div class="gallery-masonry" role="list" aria-label="Galería de fotos del café">
+        <figure class="gallery-item gallery-item--tall" role="listitem">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80" alt="Interior acogedor del café con luz cálida de tarde" loading="lazy" width="800" height="1100" />
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=700&q=80" alt="Taza de café de especialidad en mesa de madera" loading="lazy" width="700" height="500" />
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80" alt="Mesa con varios productos de panadería artesanal" loading="lazy" width="700" height="500" />
+        </figure>
+        <figure class="gallery-item gallery-item--wide" role="listitem">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&q=80" alt="Vitrina de pastelería con productos frescos del día" loading="lazy" width="900" height="500" />
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=700&q=80" alt="Barista preparando espresso en cafetera profesional" loading="lazy" width="700" height="500" />
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?w=700&q=80" alt="Panes artesanales enfriando sobre rejilla de madera" loading="lazy" width="700" height="500" />
+        </figure>
+        <figure class="gallery-item gallery-item--tall" role="listitem">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80" alt="Momento íntimo de café en taza con vapor" loading="lazy" width="700" height="900" />
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=700&q=80" alt="Selección de macarons de colores sobre base de mármol" loading="lazy" width="700" height="500" />
+        </figure>
+        <figure class="gallery-item" role="listitem">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=700&q=80" alt="Zona de lectura y trabajo del café con librería al fondo" loading="lazy" width="700" height="500" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Encuéntranos</p>
+          <h2 class="section-title" id="contact-title">Contacto & Ubicación</h2>
+        </div>
+        <div class="contact-grid">
+          <!-- Mapa -->
+          <div class="contact-map" data-reveal="left">
+            <div class="map-embed-wrap">
+              <iframe
+                title="Ubicación de JK Foodies Café & Bakery"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661519483928!2d-99.12902638509384!3d19.427023386883474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sZócalo%2C%20Ciudad%20de%20México!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Mapa de Google con la ubicación del café"
+              ></iframe>
+            </div>
+            <div class="contact-info-cards">
+              <div class="contact-info-card">
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Dirección</strong>
+                  <p>Av. Reforma 123, Col. Centro<br />Ciudad de México, CDMX</p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <span class="contact-icon" aria-hidden="true">🕐</span>
+                <div>
+                  <strong>Horarios</strong>
+                  <p>Lun – Vie: 7:00 – 21:00<br />Sáb – Dom: 8:00 – 22:00</p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <span class="contact-icon" aria-hidden="true">📞</span>
+                <div>
+                  <strong>Teléfono</strong>
+                  <p><a href="tel:+525512345678">+52 55 1234 5678</a></p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:hola@jkfoodies.mx">hola@jkfoodies.mx</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario + Redes -->
+          <div class="contact-form-wrap" data-reveal="right">
+            <form class="contact-form" id="contact-form" novalidate aria-label="Formulario de contacto">
+              <h3 class="form-title">Envíanos un mensaje</h3>
+              <div class="form-group">
+                <label for="contact-name">Nombre completo</label>
+                <input type="text" id="contact-name" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Correo electrónico</label>
+                <input type="email" id="contact-email" name="email" placeholder="tu@email.com" required autocomplete="email" />
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Asunto</label>
+                <select id="contact-subject" name="asunto">
+                  <option value="">Selecciona un tema</option>
+                  <option value="reserva">Consulta sobre reservas</option>
+                  <option value="pedido">Pedido especial / evento</option>
+                  <option value="info">Información general</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Mensaje</label>
+                <textarea id="contact-message" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                <span class="form-error" role="alert" aria-live="polite"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+                <span class="btn-text">Enviar Mensaje</span>
+                <span class="btn-spinner" aria-hidden="true" hidden></span>
+              </button>
+              <p class="form-success" id="contact-success" hidden role="status">¡Mensaje recibido! Te responderemos pronto ☕</p>
+            </form>
+
+            <div class="social-section">
+              <p class="social-label">Síguenos</p>
+              <ul class="social-links" role="list" aria-label="Redes sociales">
+                <li>
+                  <a href="#" class="social-link" aria-label="Instagram de JK Foodies" rel="noopener noreferrer">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                      <circle cx="12" cy="12" r="4"/>
+                      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link" aria-label="Facebook de JK Foodies" rel="noopener noreferrer">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link" aria-label="TikTok de JK Foodies" rel="noopener noreferrer">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.25 8.25 0 0 0 4.83 1.54V6.84a4.85 4.85 0 0 1-1.06-.15z"/>
+                    </svg>
+                    <span>TikTok</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="social-link" aria-label="WhatsApp de JK Foodies" rel="noopener noreferrer">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                    </svg>
+                    <span>WhatsApp</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESERVAS ===================== -->
+    <section class="section reservas-section" id="reservas" aria-labelledby="reservas-title">
+      <div class="reservas-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="reservas-inner">
+          <div class="reservas-text" data-reveal="left">
+            <p class="section-eyebrow section-eyebrow--light">Reserva tu mesa</p>
+            <h2 class="section-title section-title--light" id="reservas-title">Un lugar para ti,<br />cada vez.</h2>
+            <p class="reservas-lead">Garantiza tu espacio y llega a disfrutar. Sin esperas, sin sorpresas, solo el placer de una buena mesa.</p>
+            <ul class="reservas-benefits" aria-label="Beneficios de reservar">
+              <li><span aria-hidden="true">✓</span> Confirmación inmediata por email</li>
+              <li><span aria-hidden="true">✓</span> Cancela con 2 horas de anticipación</li>
+              <li><span aria-hidden="true">✓</span> Grupos de hasta 12 personas</li>
+              <li><span aria-hidden="true">✓</span> Menú especial para eventos</li>
+            </ul>
+          </div>
+          <div class="reservas-form-wrap" data-reveal="right">
+            <form class="reservas-form" id="reservas-form" novalidate aria-label="Formulario de reserva de mesa">
+              <h3 class="form-title form-title--dark">Haz tu reserva</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-name">Nombre</label>
+                  <input type="text" id="res-name" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="res-phone">Teléfono</label>
+                  <input type="tel" id="res-phone" name="telefono" placeholder="+52 55 0000 0000" required autocomplete="tel" />
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-date">Fecha</label>
+                  <input type="date" id="res-date" name="fecha" required />
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                  <label for="res-time">Hora</label>
+                  <select id="res-time" name="hora" required>
+                    <option value="">Selecciona</option>
+                    <option value="08:00">8:00 AM</option>
+                    <option value="09:00">9:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                    <option value="16:00">4:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                  </select>
+                  <span class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="res-guests">Número de personas</label>
+                <div class="guests-selector" role="group" aria-label="Seleccionar número de personas">
+                  <button type="button" class="guests-btn" id="guests-minus" aria-label="Reducir número de personas" aria-controls="res-guests">−</button>
+                  <input type="number" id="res-guests" name="personas" value="2" min="1" max="12" readonly aria-live="polite" />
+                  <button type="button" class="guests-btn" id="guests-plus" aria-label="Aumentar número de personas" aria-controls="res-guests">+</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="res-notes">Petición especial (opcional)</label>
+                <textarea id="res-notes" name="notas" rows="2" placeholder="Alergias, celebración especial, etc."></textarea>
+              </div>
+              <button type="submit" class="btn btn-warm btn-full" id="reservas-submit">
+                <span class="btn-text">Confirmar Reserva</span>
+                <span class="btn-spinner" aria-hidden="true" hidden></span>
+              </button>
+              <p class="form-success" id="reservas-success" hidden role="status">¡Reserva confirmada! Revisa tu correo. ☕🥐</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo footer-logo" aria-label="JK Foodies inicio">
+            <span class="logo-jk">JK</span>
+            <span class="logo-text">Foodies</span>
+          </a>
+          <p class="footer-tagline">Baked with love.<br />Served with warmth.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navegación del pie de página">
+          <h4>Navegación</h4>
+          <ul role="list">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contáctanos</h4>
+          <p>Av. Reforma 123, CDMX</p>
+          <p><a href="tel:+525512345678">+52 55 1234 5678</a></p>
+          <p><a href="mailto:hola@jkfoodies.mx">hola@jkfoodies.mx</a></p>
+        </div>
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <div class="footer-social-icons" aria-label="Redes sociales">
+            <a href="#" aria-label="Instagram" rel="noopener noreferrer">IG</a>
+            <a href="#" aria-label="Facebook" rel="noopener noreferrer">FB</a>
+            <a href="#" aria-label="TikTok" rel="noopener noreferrer">TT</a>
+            <a href="#" aria-label="WhatsApp" rel="noopener noreferrer">WA</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2025</span> JK Foodies Café & Bakery. Todos los derechos reservados.</p>
+        <p>Hecho con ♥ y mucho café.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
